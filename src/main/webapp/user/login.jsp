@@ -8,9 +8,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>登录</title>
 </head>
 <body>
+<span style="color: red; ">${msg}</span>
+<form action="${pageContext.request.contextPath}/LoginServlet" method="post">
 
+    用户名：<input type="text" name="username" value=""/><br/>
+    密  码：<input type="password" name="password" value=""/><br/>
+
+    <button type="submit">提交</button>
+</form>
 </body>
 </html>
